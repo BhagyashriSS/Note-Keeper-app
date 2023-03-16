@@ -5,9 +5,135 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  font-family: "McLaren", cursive;
+  /* font-weight:bold; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.dark-mode {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.dark-mode h1 {
+  color: white;
+}
+.dark-mode .note{
+  box-shadow: 0 2px 5px rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* it is making grids reposible*/
+}
+
+.note.new {
+  background-color: #67d7cc;
+
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: rgb(228, 228, 228);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.mode {
+  display: flex;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 70%;
+
+}
+
+.note {
+  background-color: #fef68a;
+  /* margin-bottom: 20px; */
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgb(79, 76, 76);
+  /*evenly space items text at bottoms and date at bottom*/
+  white-space: pre-wrap;
+  /*to keep white spacess as it is*/
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+
+}
+
+.search {
+  display: flex;
+
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+.search input {
+  border: none;
+  font-size: medium;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+
